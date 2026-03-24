@@ -1,0 +1,30 @@
+{
+  "name": "test/test",
+  "type": "project",
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "config": {
+    "vendor-dir": "bitrix/vendor",
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "require": {
+    "php" : ">=8.1",
+    "ext-json": "*",
+    "ext-dom": "*",
+    "ext-curl": "*",
+    "ext-mbstring": "*",
+    "ext-xmlreader": "*",
+    "ext-xmlwriter": "*",
+    "andreyryabin/sprint.migration": "^5.6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "TestVendor\\": "local/php_interface/TestVendor/"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^6.4"
+  }
+}
